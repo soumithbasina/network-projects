@@ -1,0 +1,17 @@
+The code for generating the outfiles is in "ospf.cpp".
+
+"infile" has all the links and cost ranges of the network to be emulated.
+Outfile of the router <id no.> is "outfile-<id no.>.txt".
+
+The bash script "routersetup.sh" executes all the processes for routers in parallel.
+Parameters passed to the executable can be changed within the file.
+
+Run "make" to generate the executable "ospf", "make clean" to delete the executable.
+
+To generate the outfiles, run multiple instances in parallel.
+The script can be used to do that.
+
+Make sure the bash script "routersetup.sh" has the execute permission.
+Run "chmod +x routersetup.sh" to make sure.
+Run the bash script using "./routersetup.sh <# of routers> <name of the infile>", it executes multiple instances of the executable in parallel.
+Use "Ctrl + C" to terminate all of the processes.

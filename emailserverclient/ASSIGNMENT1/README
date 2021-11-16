@@ -1,0 +1,12 @@
+The code for email client and server are in the emailclient.c and emailserver.c files respectively.
+
+Run "make" to compile and generate two executables "emailserver" and "emailclient".
+The executables can be removed using "make clean".
+
+You can provide the preferred port number as an argument to the executables.
+
+Run both executables in different terminal windows, enter commands as follows.
+./emailserver <port #>
+./emailclient <ip address> <port #>
+
+For the command Send, "###" must be entered in a new line to terminate the message.

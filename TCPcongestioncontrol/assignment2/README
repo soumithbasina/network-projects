@@ -1,0 +1,21 @@
+The code for generating the outfile is in the "cw.cpp" file.
+
+The "plot.py" file is a python script for generating the plot png from the outfile.
+The "plot.ipynb" file is an interactive notebook for viewing the plot of an outfile.
+These files require matplotlib to display the plot. Make sure matplotlib is installed.
+
+The "testcases.sh" file is a bash script which will automatically generate all the outfiles and plots of all the combinations of the parameters initialised in the file.
+The parameters can be changed within the file to generate different plots and outfiles.
+
+Run "make" to generate the executable "cw", "make clean" to delete the executable.
+Pass all the parameters required (-i, -m, -n, -f, -s, -T, -o) to the executable to generate the outfile.
+The command template:
+./cw -­i <double> -­m <double> ­-n <double> -­f <double> -­s <double> -­T <int> ­-o <string>
+
+Make sure the bash script "testcases.sh" has the execute permission.
+Run "chmod +x testcases.sh" to make sure.
+Run the bash script using "./testcases.sh", it generates 32 plots and outfiles with given parameters.
+All the outfiles and plots can be deleted using "rm t*.png t*.txt".
+
+The shell recording is done using the "script" command.
+Use "scriptreplay file_time shell_record" to play the recording in the terminal window.

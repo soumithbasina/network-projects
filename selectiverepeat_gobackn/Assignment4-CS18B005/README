@@ -1,0 +1,17 @@
+The code for the implementation of Selective Repeat is in SenderSR.cpp and ReceiverSR.cpp.
+The code for the implementation of Go-Back-N is in SenderGBN.cpp and ReceiverGBN.cpp.
+
+Run "make all" to generate all executables. 
+To generate executables for one algorithm, run "make sr" or "make gbn" for Selective Repeat and Go-Back-N respectively.
+
+Run both executables of any algorithm in separate terminal windows as follows.
+Run the receiver before sender to avoid the sender timing out.
+For Selective Repeat,
+./SenderSR (-d) -s <string> -p <int> -n <int> -L <int> -R <int> -N <int> -W <int> -B <int>
+./ReceiverSR (-d) -p <int> -N <int> -n <int> -W <int> -B <int> -e <int>
+
+For Go-Back-N,
+./SenderGBN (-d) -s <string> -p <int> -l <int> -r <int> -n <int> -w <int> -b <int>
+./ReceiverGBN (-d) -p <int> -n <int> -e <int>
+
+"-d" is for enabling Debug mode. It is optional.
